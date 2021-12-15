@@ -5,16 +5,15 @@
 // As a user, I can see a customized browser tab
 import React, { Component } from 'react'
 
-class Footer extends Component{
+ class Footer extends Component{
   render(){
     return(
       <>
         LEARN Academy
         <br />
-        Delta 2021
+          Echo 2021
       </>
     )
   }
 }
-
 export default Footer

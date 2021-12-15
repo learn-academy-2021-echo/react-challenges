@@ -4,9 +4,9 @@ class Profile extends Component{
   render(){
     return(
       <>
-        Jason
+        Jason: Driver
         <br />
-        Regina
+        Regina : Navigator
       </>
     )
   }
