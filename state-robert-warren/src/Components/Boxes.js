@@ -8,6 +8,7 @@ class Boxes extends Component {
         color: "white",
         // this initially sets the background to black
         background: "black",
+        
       }
     }
 
@@ -23,15 +24,18 @@ class Boxes extends Component {
     this.setState({background: colors[Math.floor(Math.random()*7)]})
 
     }
+      
         
 
     render(){
       return(
       <>
-      <button id = "button1" onClick={this.changeColor} style = {{color: this.state.color, background: this.state.background, width: 200, height: 200}}>
+      <button id = "button1" onClick={this.changeColor} style = {{color: this.state.color, background: this.state.background, margin: 20, width: 200, height: 200}}>
         {/* set the text equal to what is stored in this.state.background */}
         {this.state.background}
       </button>
+
+
       </>
       )}
   }
