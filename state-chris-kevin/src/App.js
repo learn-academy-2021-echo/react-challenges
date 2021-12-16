@@ -1,36 +1,18 @@
 import React , { Component } from 'react'
 import './App.css';
+import Box from './components/Box'
 
 
 class App extends Component {
-  constructor(props){
-    super(props)
-    this.state = {
-      color: "white"
-    }
-  }
-
-nameColor = () =>{
-  let newColor = this.state.color
-   this.setState({color: newColor})
-}
-
-
-render(){
-  
-  
-  return (
+   render(){
+     return (
     <>
-    <button onClick = {this.nameColor}>
-    </button>
-    
-    
-    
+      <Box />
+      <Box />
+      <Box />
+      <Box />
     </>
   )
   }
 }
-
-
-
 export default App;
