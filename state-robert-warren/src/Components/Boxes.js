@@ -8,9 +8,7 @@ class Boxes extends Component {
         color: "white",
         // this initially sets the background to black
         background: "black",
-  
       }
-  
     }
 
     changeColor = () => {
@@ -22,7 +20,7 @@ class Boxes extends Component {
     //turns the screen green --> this.setState({background: colors[3]})
     //start a function that sets the state of background color to a random number between 1 and (the number of colors)
     // this.setState({buttonColor: this.state.background})
-    const boxColor = this.setState({background: colors[Math.floor(Math.random()*7)]})
+    this.setState({background: colors[Math.floor(Math.random()*7)]})
 
     }
         
