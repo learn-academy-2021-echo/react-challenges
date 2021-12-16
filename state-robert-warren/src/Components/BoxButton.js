@@ -16,7 +16,8 @@ class BoxButton extends Component {
     console.log(this.state.newBoxArr)
   }
   remBox = () => {
-    this.setState({newBoxArr: this.state.newBoxArr.splice()});
+    let index = this.state.newBoxArr.length
+    this.setState({newBoxArr: this.state.newBoxArr.splice(1, index)});
 
   }
 
