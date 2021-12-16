@@ -1,20 +1,17 @@
 import React, { Component } from 'react'
-// import './App.css';
-
 
 
 class Box extends Component {
   constructor(props){
     super(props)
     this.state = {
-      color: "white",
-      show: false
+      color: "white"
     }
   }
 
  
   changeColor = () => {
-    let possibleColors = ['green', 'blue', 'yellow', 'red', 'purple', 'orange']
+    let possibleColors = ['green', 'blue', 'yellow', 'red', 'purple', 'orange', 'chartreuse','rgb(18, 216, 220)', 'magenta', 'hotpink']
     this.setState({color: possibleColors[Math.floor(Math.random() * possibleColors.length)]})   
   }
 

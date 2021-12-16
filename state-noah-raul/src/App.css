@@ -1,7 +1,42 @@
 #square {
-  padding: 100px;
   border: 2px solid black;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   margin: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#buttons {
+  text-align: center;
+margin: 15px;
+padding-top: 25px;
+}
+
+#addOne {
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+#removeOne {
+  align-self: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+#reset {
+  align-self: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+#boxes {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: rgb(18, 216, 220);
 }
