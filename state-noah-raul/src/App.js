@@ -1,29 +1,37 @@
 import React, { Component } from 'react'
 import './App.css';
+import Box from './components/Box'
 
 
 
-class Box extends Component {
+
+class App extends Component {
   constructor(props){
-    super(props)
-    this.state = {
-      color: "white"
-    }
+  super(props)
+  this.state={
+    numberOfBoxes: 0,
+    array: []
+  }// box [1,2,3,4]
   }
 
- 
-  changeColor = () => {
-    let possibleColors = ['green', 'blue', 'yellow', 'red', 'purple', 'orange']
-    this.setState({color: possibleColors[Math.floor(Math.random() * possibleColors.length)]})   
+  addOne=()=>{
+    this.setState({numberOfBoxes: this.state.numberOfBoxes + 1})
+    this.state.array.push(this.state.numberOfBoxes)
   }
+
 
   render() {
     return (
-      <button style={{backgroundColor: this.state.color}} onClick={this.changeColor} id = "square">
-        {this.state.color}
-      </button>
+      <div>
+        <button onClick={this.addOne}>Press Here For More Boxes</button>
+
+        <h1>{this.state.array.map(value=><h1><Box /></h1>)}</h1>
+       
+       
+
+
+      </div>
     )
   }
 }
-
-export default Box
+export default App
