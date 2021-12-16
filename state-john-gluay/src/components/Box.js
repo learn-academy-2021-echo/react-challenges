@@ -6,8 +6,8 @@ class Box extends Component {
     this.state = {
       num: 0,
       colors: ["green", "blue", "yellow", "red", "purple", "orange"],
-      color: "white",
-      background: this.color
+      currentColor: "white",
+
     };
   }
 
@@ -16,15 +16,17 @@ class Box extends Component {
       num:
         this.state.num + 1 < this.state.colors.length ? this.state.num + 1 : 0,
     });
-    this.setState({color: this.state.colors[this.state.num] });
+    this.setState({currentColor: this.state.colors[this.state.num] });
   }; //closing tag
 
   render() {
     return (
       <>
-        <div id="square" onClick={this.colorName} style={{this.state.background}} >
-          {this.state.color}
+
+        <div id="square" onClick={this.colorName} style={{background: this.state.currentColor}}>
+          {this.state.currentColor}
         </div>
+
       </>
     );
   }

@@ -9,7 +9,17 @@ class App extends Component {
     return (
      <>
      <Header />
+     <div id="bigDiv">
      <Box />
+     <Box />
+     <Box />
+     <Box />
+     <Box />
+     <Box />
+     <Box />
+     <Box />
+
+     </div>
      </>
     )
   }
