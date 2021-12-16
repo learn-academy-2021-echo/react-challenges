@@ -10,19 +10,9 @@ class App extends Component {
     return(
     <>
     <h1>We are the best</h1>
-    {/* <Boxes />
-    <Boxes />
-    <Boxes />
-    <Boxes /> */}
-    {[ <Boxes />, <Boxes />, <Boxes />]}
-    <br> </br>
-    <br> </br>
-    <br> </br>
-    <BoxButton />
-    {this.state.newBoxArr}
-    {/* <h1>this is our start</h1>
-    <button id = "button1" onClick={this.changeColor} style  {{color: this.state.color, background: this.state.background, width: 200, height: 200}}>button</button>
-    <div id = "box1"></div> */}
+    {/* {[ <Boxes />, <Boxes />, <Boxes />]} */}
+    {<BoxButton/>}
+      
     </>
     )
   }
