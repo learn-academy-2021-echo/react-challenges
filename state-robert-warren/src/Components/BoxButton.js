@@ -25,10 +25,10 @@ class BoxButton extends Component {
   render() {
     return (
       <>
-        <button id= "addBox" onClick = {this.addBox} style = {{color: "white", background: "black", margin: 20, width: 200, height: 200}}>
+        <button id= "addBox" onClick = {this.addBox} style = {{color: "white", background: "black", margin: 20, width: 200, height: 100}}>
           push this for more Boxes
         </button>
-        <button id= "remBox" onClick = {this.remBox} style = {{color: "white", background: "black", margin: 20, width: 200, height: 200}}>
+        <button id= "remBox" onClick = {this.remBox} style = {{color: "white", background: "black", margin: 20, width: 200, height: 100}}>
           push this for less Boxes
         </button>
           {this.state.newBoxArr}
