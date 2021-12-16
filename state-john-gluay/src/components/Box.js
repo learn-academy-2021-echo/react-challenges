@@ -20,7 +20,7 @@ class Box extends Component {
   }; //closing tag
 
   render() {
-    return (
+    return (   
       <>
 
         <div id="square" onClick={this.colorName} style={{background: this.state.currentColor}}>
