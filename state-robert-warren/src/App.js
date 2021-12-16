@@ -7,6 +7,7 @@ class App extends Component {
   render(){
     return(
     <>
+    <h1>We are the best</h1>
     <Boxes />
     <Boxes />
     <Boxes />
