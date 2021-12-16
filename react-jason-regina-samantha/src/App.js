@@ -21,10 +21,9 @@ class App extends Component{
     return(
       <>
         <h1>Color Box Challenge</h1>
-        <Colorbox/>
-        <Colorbox/>
-        <Colorbox/>
-        <Colorbox/>
+        
+       <Colorbox/>
+       
       </>
     )
   }

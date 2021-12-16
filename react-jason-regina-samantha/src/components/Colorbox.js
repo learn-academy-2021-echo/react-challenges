@@ -17,7 +17,8 @@ class Colorbox extends Component{
       super(props)
       this.state = {
         color: ["green", "blue", "yellow", "red", "purple", "orange"],    
-        index: 0
+        index: 0,
+        background:"white"
       }
     }
     changeName = () => {
@@ -28,15 +29,25 @@ class Colorbox extends Component{
         //this.state({color: color[this.state.index]})
         //background
         //alert("Yo!")
-    }
+        // #42  <h2>Colorbox: {this.state.color[this.state.index]}</h2>
+      }
+      addBox = () => {
+      alert("Im clicking")
+      }
+      deleteBox = () => {
+        alert("Clicking Delete Botton")
+      }
     render(){
       return(
         <>
-         <button >
+         <button onClick={this.addBox} >
              Add a Color Box
          </button>
-         <div id = "square"  onClick = {this.changeName} style={{color: this.state.color[this.state.index]}}>
-             <h2>Colorbox: {this.state.color[this.state.index]}</h2>
+         <button onClick={this.deleteBox}>
+             Remove a Color Box
+         </button>
+         <div id = "square"  onClick = {this.changeName} style={{background: this.state.color[this.state.index]}}>
+            
          </div>
          
         </>
