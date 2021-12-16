@@ -8,6 +8,9 @@ class App extends Component {
     return(
     <>
     <Boxes />
+    <Boxes />
+    <Boxes />
+    <Boxes />
     {/* <h1>this is our start</h1>
     <button id = "button1" onClick={this.changeColor} style = {{color: this.state.color, background: this.state.background, width: 200, height: 200}}>button</button>
     <div id = "box1"></div> */}
