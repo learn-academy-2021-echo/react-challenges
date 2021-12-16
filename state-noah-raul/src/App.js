@@ -19,7 +19,7 @@ class Box extends Component {
 
   render() {
     return (
-      <button onClick={this.changeColor} id = "square">
+      <button style={{backgroundColor: this.state.color}} onClick={this.changeColor} id = "square">
         {this.state.color}
       </button>
     )
