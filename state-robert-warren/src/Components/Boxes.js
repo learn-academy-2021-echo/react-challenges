@@ -1,3 +1,5 @@
+import React, { Component } from 'react';
+
 class Boxes extends Component {
     constructor(props){
       super(props)
@@ -8,11 +10,11 @@ class Boxes extends Component {
   
       }
   
-      var changeColor = () => {
-        //on click for button1 needs to change color of button
-        //need this.setState to change both color and color text
-        this.setState({background: this.state.background = "white"})
-      }
+    }
+    changeColor = () => {
+      //on click for button1 needs to change color of button
+      //need this.setState to change both color and color text
+      this.setState({background: "white"})
     }
     render(){
       return(
