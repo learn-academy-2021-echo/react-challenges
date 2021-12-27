@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <title>Intro to React</title>
+
+</head>
+
+<body>
+
+<h1> ECHO 2021 </H1>
+
+<br>
+<ul>
+<li>Yann</li>
+<li>Mikka</li>
+<li>Demetrius</li>
+<li>Noah</li>
+<li>Raul</li>
+<li>Christopher</li>
+<li>Kevin</li>
+<li>Hannah</li>
+<li>Antonio</li>
+<li>Joshua</li>
+<li>Jason</li>
+<li>Regina</li>
+<li>Pavan</li>
+<li>Kirk</li>
+<li>Gluay</li>
+<li>John</li>
+<li>Salvador</li>
+<li>Francisco</li>
+</ul>
+
+
+<footer>
+  <h1> Yann and Mikka </h1>
+</footer>
+
+
+
+<div id="react-container"></div>
+
+  <script type="text/babel">
+    class App extends React.Component{
+      render(){
+        return(
+          <></>
+        )
+      }
+    }
+    const domContainer = document.querySelector('#react-container')
+    ReactDOM.render(<App />, domContainer)
+  </script>
+</body>
+</html>
