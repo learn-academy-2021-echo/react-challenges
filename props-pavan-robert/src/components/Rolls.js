@@ -5,9 +5,15 @@ class Rolls extends Component {
 
     render() {
       return(
-        <div>
-            <li></li>
-        </div>
+        <>
+      <div>
+        <ul>
+          {this.props.numList.map(item => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </div>
+      </>
       )
     }
   }
