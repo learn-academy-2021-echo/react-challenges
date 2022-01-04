@@ -29,7 +29,7 @@ export default class App extends Component{
   render(){
     return(
     <>
-      <h1>Click to Roll</h1>
+      <h1>Click to Roll Dice</h1>
       <div>
         <DiceRoll current={ this.state.numbers } />
       </div>
