@@ -33,7 +33,7 @@ class Colorbox extends Component {
     // #42  <h2>Colorbox: {this.state.color[this.state.index]}</h2>
   }
   render() {
-
+c
     return (
       <>
 
