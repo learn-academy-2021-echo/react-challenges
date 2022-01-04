@@ -4,18 +4,32 @@ export class BadRobot extends Component {
     constructor(props){
         super(props) 
         this.state = {
-            arrayLength : this.props.value.length     
+            badArray: []
         }
         
+    }
+
+    blahFunct = () => {
+        let newArr = this.badArray
+        for (let index = 0; index < this.props.length; index++) {
+            if (index % 3 === 0){
+                 this.setState.badArray.push('B')
+            } else if (index % 3 === 1){
+                 this.setState.badArray.push('L')
+            } else if (index % 3 === 2){
+                 this.setState.badArray.push('A')
+            }
+        }return newArr
     }
 
     render() {
         return (
             <div>
                 
-                <div>{this.state.arrayLength}</div>
                 <h1>Bad Robot</h1>
-                <p>I hear you saying {this.props.value}. Is that correct?</p>
+                {this.blahFunct}
+                <p>I hear you saying {this.state.badArray}. Is that correct?</p>
+                <p>{this.props.length}</p>
             </div>
         )
     }
