@@ -24,8 +24,6 @@ class App extends Component {
         <div class="Dice">
           <Dice numb={ this.state.diceRollNum }
           roll = { this.diceRoll }/>
-        </div>
-        <div class="Roll">
           <Rolls numList = { this.state.rollList }/>
         </div>
       </>

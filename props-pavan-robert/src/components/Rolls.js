@@ -7,11 +7,9 @@ class Rolls extends Component {
       return(
         <>
       <div>
-        <ul>
           {this.props.numList.map(item => (
-            <li key={item}>{item}</li>
+            <div key={item}>{item}</div>
           ))}
-        </ul>
       </div>
       </>
       )
