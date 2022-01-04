@@ -2,6 +2,11 @@ body {
   background-color: rgb(203, 203, 203);
   color: rgb(47, 47, 47);
   text-align: center;
+  font-family: 'Bebas Neue', cursive;
+}
+
+h4{
+  font-family: 'Bebas Neue', cursive;
 }
 
 .bigDice {
@@ -9,6 +14,7 @@ body {
   height: auto;
   margin: 25px 0;
 }
+
 .dice-box {
   width: 150px;
   height: 150px;
@@ -25,16 +31,17 @@ body {
 
 .roll-log {
   width: 250px;
-  height: 250px;
+  height: auto;
   border: 2px solid #000;
   border-radius: 8px;
   margin: 0 auto;
   font-size: 20px;
+  overflow-wrap: break-word;
 }
 
 .restart-button {
-  width: 100PX;
-  height: 50px;
+  width: 150px;
+  height: 55px;
   border: none;
   border-radius: 3px;
   margin-top: 25px;
@@ -47,4 +54,8 @@ body {
 .restart-button:hover {
   background-color: #fff;
   color: rgb(109, 109, 109);
+}
+
+.list li{
+  list-style-type: none;
 }

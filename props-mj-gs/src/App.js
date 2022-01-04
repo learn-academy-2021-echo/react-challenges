@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css';
 import Dice from './components/Dice';
 import RollLog from './components/RollLog';
+import diceone from './components/dice-one-solid.svg';
 
 
 class App extends Component {
@@ -39,9 +40,10 @@ class App extends Component {
   render() {
   return (
     <div>
-      <h4 style={{margin: "25px 0 0 0", fontSize:"25px"}}>Dice Roller - M & G</h4>
+      <h4 style={{margin: "25px 0 0 0", fontSize:"50px"}}>Dice Roller - M & G</h4>
 
       <Dice dice={ this.state.diceNums[this.state.currentDice]} diceRolls={this.diceRolls} />
+
 
       <RollLog dice={this.state.rollLog } />
 

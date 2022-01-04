@@ -8,9 +8,9 @@ export class RollLog extends Component {
             <div>
                 <div className="roll-log"> 
                     <p>Rolls</p>
-                    {this.props.dice}
-                    
-                    
+                        <div className = "list"> {this.props.dice.map(value =>
+                            <li>{value}</li>)}
+                        </div>
                 </div>
             </div>
         )
