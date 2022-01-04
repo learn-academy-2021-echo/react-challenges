@@ -12,7 +12,6 @@ class Dice extends Component {
         return (
             <div>
                 <h1> {this.props.number}</h1>
-                
                 <button onClick={this.props.rolls}>Click button to Roll 🎲</button>
             </div>
         )

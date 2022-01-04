@@ -12,7 +12,7 @@ export default class App extends Component {
         currentIndex: 0  ,
         numberHistory :[] 
     }
-}
+} 
  rollDice = () =>{
    let nextIndex = Math.floor(Math.random()* this.state.numbers.length)
    this.setState({currentIndex: nextIndex})
