@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <title>Intro to React</title>
+
+</head>
+<body>
+
+  <div id="react-container"></div>
+
+  <script type="text/babel">
+    class App extends React.Component{
+      render(){
+        return(
+          <>
+          <Header />
+          <Content />
+          <Footer />
+          </>
+        )
+      }
+    }
+
+    class Header extends React.Component{
+      render(){
+        return(
+          <>
+          <h1>Echo 2021</h1>
+          </>
+        )
+      }
+    }
+
+    class Content extends React.Component{
+      render(){
+        return(
+          <>
+          <h2>Classmates</h2>
+          <table>
+            <tr>
+                <td>Kirk</td>
+                <td>Chris</td>
+                <td>Gluay</td>
+            </tr>
+            <tr>
+                <td>Kevin</td>
+                <td>Regina</td>
+                <td>Antonio</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Demetrius</td>
+                <td>Salvador</td>
+            </tr>
+            <tr>
+                <td>Mikka</td>
+                <td>Pavan</td>
+                <td>Noah</td>
+            </tr>
+            <tr>
+                <td>Robert</td>
+                <td>Raul</td>
+                <td>Yann</td>
+            </tr>
+            <tr>
+                <td>Deon</td>
+                <td>Jason</td>
+                <td>Hannah</td>
+            </tr>
+            <tr>
+                <td>Joshua</td>
+                <td>Francisco</td>
+                <td>Warren</td>
+            </tr>
+            <tr>
+                <td>Samantha</td>
+                <td>Austin</td>
+                <td>Sarah</td>
+            </tr>
+            
+            </table>
+          </>
+        )
+      }
+    }
+
+    class Footer extends React.Component{
+      render(){
+        return(
+          <>
+          <p>&copy; copyright : John and Gluay</p>
+          </>
+        )
+      }
+    }
+
+    const domContainer = document.querySelector('#react-container')
+    ReactDOM.render(<App />, domContainer)
+  </script>
+</body>
+</html>

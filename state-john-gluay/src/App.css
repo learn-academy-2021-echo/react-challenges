@@ -1,0 +1,17 @@
+
+#square {
+  width : 150px;
+  height: 150px;
+  border: 2px solid black;
+  margin: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+#bigDiv {
+  display: flex;
+  flex-wrap: wrap;
+}
