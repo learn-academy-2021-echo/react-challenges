@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css';
 import GoodRobot from './Components/GoodRobot';
 import BadRobot from './Components/BadRobot';
+import Kanyebot from './Components/Kanyebot';
 //need to create a class "app"
 //we need to render an input -> text-box 
 //our parent comp. has a userInput, that is blank
@@ -24,22 +25,25 @@ class App extends Component {
     return (
       <div>
         <h1>Enter Your Text Here</h1>
-        <input type="text" value={this.state.userInput}
+        <div className="textbox" > <input  type="text" value={this.state.userInput}
         onChange={this.handleChange} />
+        </div>
 
       < GoodRobot userInput={this.state.userInput} />
-
       < BadRobot userInput={this.state.userInput} />
-      
-
-      
+      < Kanyebot userInput={this.state.userInput} />
       </div>
     )
   }
 }
-
-
-
-
-
 export default App;
+
+
+
+
+
+
+
+      
+
+      

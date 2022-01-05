@@ -23,7 +23,7 @@ class BadRobot extends Component {
     }
    render() {
         return (
-            <div>
+            <div className="BadRobot">
                 <h1>Bad Robot</h1>
                 <p> I hear you saying {this.translate(this.props.userInput)}. Is that correct? </p>
             </div>

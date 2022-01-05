@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class GoodRobot extends Component {
+class Kanyebot extends Component {
     constructor(props){
         super(props)
     }
@@ -9,11 +9,11 @@ class GoodRobot extends Component {
     
     render() {
         return (
-            <div className="GoodRobot">
-                <h1>Good Robot</h1>
-                <p> I hear you saying {this.props.userInput}. Is that correct? </p>
+            <div className="Kaynebot">
+                <h1>Kayne Bot</h1>
+                <p> I'm gonna let you finish but Beyonce is {this.props.userInput}. </p>
             </div>
         )
     }
 }
-export default GoodRobot
+export default Kanyebot
