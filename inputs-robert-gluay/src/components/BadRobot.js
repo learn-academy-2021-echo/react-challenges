@@ -19,7 +19,7 @@ export class BadRobot extends Component {
             } else if (index % 3 === 2){
                  this.setState.badArray.push('A')
             }
-        }return newArr
+        }return this.setState ({badArray: newArr})
     }
 
     render() {
