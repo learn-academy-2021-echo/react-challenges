@@ -1,0 +1,61 @@
+body {
+  background-color: rgb(203, 203, 203);
+  color: rgb(47, 47, 47);
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+}
+
+h4{
+  font-family: 'Bebas Neue', cursive;
+}
+
+.bigDice {
+  width: 100%;
+  height: auto;
+  margin: 25px 0;
+}
+
+.dice-box {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  margin: 0 auto;
+  font-size: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.roll-log {
+  width: 250px;
+  height: auto;
+  border: 2px solid #000;
+  border-radius: 8px;
+  margin: 0 auto;
+  font-size: 20px;
+  overflow-wrap: break-word;
+}
+
+.restart-button {
+  width: 150px;
+  height: 55px;
+  border: none;
+  border-radius: 3px;
+  margin-top: 25px;
+  cursor: pointer;
+  font-weight:700;
+  color:#fff;
+  background-color: rgb(109, 109, 109);
+}
+
+.restart-button:hover {
+  background-color: #fff;
+  color: rgb(109, 109, 109);
+}
+
+.list li{
+  list-style-type: none;
+}
